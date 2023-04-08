@@ -14,7 +14,6 @@ export default function Home () {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          width: "100vw",
           height: "50vh",
         }}
       >
