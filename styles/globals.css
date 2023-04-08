@@ -6,22 +6,22 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+
+  background-color: #121824;
+  color: #F8F0E3;
 }
 
-/** {*/
-  /*box-sizing: border-box;*/
-/*}*/
+h1 {
+  background: #6AADCF;
+  background: linear-gradient(to right, #6AADCF 7%, #516ACF 66%);
+  background-clip: text;
+  color: transparent;
+}
 
-/*a {*/
-  /*color: #0070f3;*/
-  /*text-decoration: none;*/
-/*}*/
+.socialButton {
+  transition: all 0.1s;
+}
 
-/*a:hover {*/
-  /*text-decoration: underline;*/
-/*}*/
-
-/*img {*/
-  /*max-width: 100%;*/
-  /*display: block;*/
-/*}*/
+.socialButton:hover {
+  transform: scale(1.1);
+}
