@@ -4,12 +4,20 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  margin-bottom: 50px;
 
   background-color: #121824;
   color: #F8F0E3;
 }
 
 h1 {
+  background: #6AADCF;
+  background: linear-gradient(to right, #6AADCF 7%, #516ACF 66%);
+  background-clip: text;
+  color: transparent;
+}
+
+h5 {
   background: #6AADCF;
   background: linear-gradient(to right, #6AADCF 7%, #516ACF 66%);
   background-clip: text;
