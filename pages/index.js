@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YoutubeIcon from "@mui/icons-material/YouTube";
+import EmailIcon from "@mui/icons-material/Email"
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -16,7 +17,8 @@ import { Chip } from '@mui/material';
 export default function Home () {
   const projectCard = {
     background: "#222a3b",
-    color: "white"
+    color: "white",
+    boxShadow: "rgba(73, 88, 184, 0.4) 0px 5px, rgba(73, 88, 184, 0.3) 0px 10px, rgba(73, 88, 184, 0.2) 0px 15px, rgba(73, 88, 184, 0.1) 0px 20px, rgba(73, 88, 184, 0.05) 0px 25px"
   }
 
   const chipStyle = {
@@ -107,6 +109,20 @@ export default function Home () {
             style={{
               background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
               marginLeft: "15px",
+              marginRight: "15px",
+            }}
+            href="mailto:christian.nguyen6@outlook.com"
+          >
+            <EmailIcon />
+          </Button>
+
+          <Button
+            className="socialButton"
+            size="large"
+            variant="contained"
+            style={{
+              background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
+              marginLeft: "15px",
             }}
             href="https://www.youtube.com/watch?v=xfeys7Jfnx8&ab_channel=nigahiga"
             target="_blank"
@@ -132,10 +148,9 @@ export default function Home () {
         </h1>
 
         <p style={{ textAlign: "center" }}>
-          I&apos;m an aspiring software engineer in my final year looking to find ways to continually
-          challenge myself while having fun. My dream is to work on real-world problems that
-          can have a lasting positive impact in the world. So far I&apos;ve only completed a couple projects but I&apos;m
-          looking to expand my horizons and build a full-stack app for movie recommendations.
+          I&apos;m an aspiring software engineer in my final year and I love to find ways to continually
+          challenge myself. My dream is to work on real-world problems that
+          can have a lasting positive impact in the world. In my spare time I&apos;ve been doing a lot of powerlifting and running so maybe one day I can overhead press a car 💪😎.
         </p>
 
         <p style={{ textAlign: "center" }}>
@@ -160,19 +175,19 @@ export default function Home () {
         <div
           style={{
             display: "grid",
-            gridGap: "30px",
+            gridGap: "40px",
             justifyContent: "center",
             flexDirection: "column"
           }}
         >
-          <Card style={projectCard} sx={{ width: "70vw", height: "40vh", position: "relative" }}>
+          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
             <CardMedia
               component="img"
               height="250px"
               image="/images/airbrb.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div">
                 Airbrb
               </Typography>
               <Typography variant="body1" color="#d2d2d4">
@@ -207,14 +222,14 @@ export default function Home () {
             </CardContent>
           </Card>
 
-          <Card style={projectCard} sx={{ width: "70vw", height: "40vh", position: "relative" }}>
+          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
             <CardMedia
               component="img"
               height="250px"
               image="/images/flockr.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div">
                 Flockr
               </Typography>
               <Typography variant="body1" color="#d2d2d4">
@@ -253,14 +268,14 @@ export default function Home () {
             </CardContent>
           </Card>
 
-          <Card style={projectCard} sx={{ width: "70vw", height: "40vh", position: "relative" }}>
+          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
             <CardMedia
               component="img"
               height="250px"
               image="/images/loopmania.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div">
                 Loop Mania
               </Typography>
               <Typography variant="body1" color="#d2d2d4">
