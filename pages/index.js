@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Button from "@mui/material/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YoutubeIcon from "@mui/icons-material/YouTube";
@@ -12,6 +11,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 import { Chip } from '@mui/material';
+import { Anchor, Button } from '@mantine/core';
 
 
 export default function Home () {
@@ -46,23 +46,28 @@ export default function Home () {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          height: "50vh",
+          height: "100vh",
         }}
       >
         <Image
           priority
+          className="profileBox"
           src="/images/christian.jpg"
           height={320}
           width={320}
           alt=""
-          style={{ borderRadius: "50%" }}
         />
 
         <h1 style={{ fontSize: "50pt", textAlign: "center" }}>
           Hi, I&apos;m Christian
         </h1>
 
-        <h2 style={{ textAlign: "center", marginTop: "-4vh" }}>
+        <h2
+          style={{ textAlign: "center", marginTop: "-50px" }}
+          sx={{
+            marginTop: { md: -200, lg: -200 }
+          }}
+        >
           UNSW Computer Science
         </h2>
 
@@ -74,13 +79,13 @@ export default function Home () {
           }}
         >
           <Button
+            size="md"
             className="socialButton"
-            size="large"
-            variant="contained"
+            variant="gradient"
             style={{
-              background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
               marginRight: "15px"
             }}
+            component="a"
             href="https://github.com/scoogii"
             target="_blank"
           >
@@ -88,42 +93,43 @@ export default function Home () {
           </Button>
 
           <Button
+            size="md"
             className="socialButton"
-            size="large"
-            variant="contained"
+            variant="gradient"
             style={{
-              background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
               marginLeft: "15px",
               marginRight: "15px"
             }}
+            component="a"
             href="https://linkedin.com/in/christianngu"
             target="_blank"
           >
             <LinkedInIcon />
           </Button>
 
+
           <Button
+            size="md"
             className="socialButton"
-            size="large"
-            variant="contained"
+            variant="gradient"
             style={{
-              background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
               marginLeft: "15px",
               marginRight: "15px",
             }}
+            component="a"
             href="mailto:christian.nguyen6@outlook.com"
           >
             <EmailIcon />
           </Button>
 
           <Button
+            size="md"
             className="socialButton"
-            size="large"
-            variant="contained"
+            variant="gradient"
             style={{
-              background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%",
               marginLeft: "15px",
             }}
+            component="a"
             href="https://www.youtube.com/watch?v=xfeys7Jfnx8&ab_channel=nigahiga"
             target="_blank"
           >
@@ -135,7 +141,7 @@ export default function Home () {
 
       <hr
         style={{
-          height: "3px",
+          height: "2px",
           border: "none",
           borderRadius: "6px",
           background: "linear-gradient(to right, #6AADCF 7%, #516ACF 66%"
@@ -174,13 +180,22 @@ export default function Home () {
 
         <div
           style={{
-            display: "grid",
-            gridGap: "40px",
+            display: "flex",
+            gridGap: "50px",
             justifyContent: "center",
+            alignItems: "center",
             flexDirection: "column"
           }}
         >
-          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
+          <Card
+            className="projectBox"
+            style={projectCard}
+            sx={{
+              width: { xs: "80vw", sm: "55vw" },
+              height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
+              position: "relative"
+            }}
+          >
             <CardMedia
               component="img"
               height="250px"
@@ -190,7 +205,13 @@ export default function Home () {
               <Typography gutterbottom="true" variant="h5" component="div">
                 Airbrb
               </Typography>
-              <Typography variant="body1" color="#d2d2d4">
+              <Typography
+                variant="body1"
+                color="#d2d2d4"
+                sx={{
+                  fontSize: { xs: 15, sm: 16, md: 16, lg: 18 },
+                }}
+              >
                 A clone of the popular renting platform Airbnb which had features including:
                 <br />
                 - Logins and signups
@@ -222,7 +243,15 @@ export default function Home () {
             </CardContent>
           </Card>
 
-          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
+          <Card
+            className="projectBox"
+            style={projectCard}
+            sx={{
+              width: { xs: "80vw", sm: "55vw" },
+              height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
+              position: "relative"
+            }}
+          >
             <CardMedia
               component="img"
               height="250px"
@@ -232,7 +261,13 @@ export default function Home () {
               <Typography gutterbottom="true" variant="h5" component="div">
                 Flockr
               </Typography>
-              <Typography variant="body1" color="#d2d2d4">
+              <Typography
+                variant="body1"
+                color="#d2d2d4"
+                sx={{
+                  fontSize: { xs: 15, sm: 16, md: 16, lg: 18 },
+                }}
+              >
                 A clone of an online collaboration platform called Flock. Implemented features such as:
                 <br />
                 - Logins and signups WITH authentication
@@ -268,7 +303,15 @@ export default function Home () {
             </CardContent>
           </Card>
 
-          <Card style={projectCard} sx={{ width: "70vw", height: "42vh", position: "relative" }}>
+          <Card
+            className="projectBox"
+            style={projectCard}
+            sx={{
+              width: { xs: "80vw", sm: "55vw" },
+              height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
+              position: "relative"
+            }}
+          >
             <CardMedia
               component="img"
               height="250px"
@@ -278,7 +321,13 @@ export default function Home () {
               <Typography gutterbottom="true" variant="h5" component="div">
                 Loop Mania
               </Typography>
-              <Typography variant="body1" color="#d2d2d4">
+              <Typography
+                variant="body1"
+                color="#d2d2d4"
+                sx={{
+                  fontSize: { xs: 15, sm: 16, md: 16, lg: 18 },
+                }}
+              >
                 A clone of an endless RPG game similar to the likes of Loop Hero.
                 Heavy focus on implementing various design patterns and following OOP principles throughout the project. Also wrote JUnit tests to ensure the game performed as expected. Our hero was Drake.
               </Typography>
