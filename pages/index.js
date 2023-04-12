@@ -11,7 +11,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
 import { Chip } from '@mui/material';
-import { Anchor, Button } from '@mantine/core';
+import { Button } from '@mantine/core';
+
+import { motion, useScroll } from "framer-motion"
 
 
 export default function Home () {
@@ -35,11 +37,44 @@ export default function Home () {
     paddingBottom: "10px",
   }
 
+  const progressBarStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    height: "10px",
+    background: "red",
+    transformOrigin: "0%"
+  }
+
+  const { scrollYProgress } = useScroll();
+
   return (
     <>
       <Head>
         <title>Christian&apos;s Portfolio</title>
       </Head>
+
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      {/*
+        <motion.div
+          className={progressBarStyle}
+          style={{ scaleX: scrollYProgress }}
+        />
+        */}
+
       <div
         style={{
           display: "flex",
