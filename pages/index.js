@@ -292,7 +292,7 @@ export default function Home () {
               image="/images/flockr.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom="true" variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div" color="white">
                 Flockr
               </Typography>
               <Typography
@@ -352,7 +352,7 @@ export default function Home () {
               image="/images/loopmania.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom="true" variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div" color="white">
                 Loop Mania
               </Typography>
               <Typography
