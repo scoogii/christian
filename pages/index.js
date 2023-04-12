@@ -20,7 +20,8 @@ export default function Home () {
 
   const projectCard = {
     color: "white",
-    boxShadow: "rgba(73, 88, 184, 0.4) 0px 5px, rgba(73, 88, 184, 0.3) 0px 10px, rgba(73, 88, 184, 0.2) 0px 15px, rgba(73, 88, 184, 0.1) 0px 20px, rgba(73, 88, 184, 0.05) 0px 25px"
+    boxShadow: "rgba(73, 88, 184, 0.4) 0px 5px, rgba(73, 88, 184, 0.3) 0px 10px, rgba(73, 88, 184, 0.2) 0px 15px, rgba(73, 88, 184, 0.1) 0px 20px, rgba(73, 88, 184, 0.05) 0px 25px",
+    background: "#1c2230"
   }
 
   const chipStyle = {
