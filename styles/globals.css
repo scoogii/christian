@@ -137,7 +137,7 @@ h5 {
 }
 
 .socialButton:hover {
-  transform: scale(1.1);
+  transform: scale(1.10);
 }
 
 .profileBox {
@@ -152,7 +152,7 @@ h5 {
 }
 
 .projectBox {
-  transition: 0.3s ease all;
+  transition: 0.3s ease-in;
 }
 
 .projectBox:hover {
