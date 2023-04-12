@@ -236,7 +236,7 @@ export default function Home () {
               image="/images/airbrb.jpeg"
             />
             <CardContent>
-              <Typography gutterbottom="true" variant="h5" component="div">
+              <Typography gutterbottom="true" variant="h5" component="div" color="white">
                 Airbrb
               </Typography>
               <Typography
