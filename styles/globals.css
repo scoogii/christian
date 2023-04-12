@@ -158,6 +158,7 @@ h5 {
 }
 
 .projectBox:hover {
+  background: #1c2230;
   transition: 0.3s ease-in;
   transform: scale(1.05);
 }
