@@ -19,7 +19,7 @@ import { motion, useScroll } from "framer-motion"
 export default function Home () {
 
   const projectCard = {
-    background: #1c2230;
+    background: "#1c2230"
   }
 
   const chipStyle = {
