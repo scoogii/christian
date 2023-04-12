@@ -133,7 +133,7 @@ h5 {
 }
 
 .socialButton:hover {
-  transition: all 0.1s ease all;
+  transition: all 1s ease all;
   transform: scale(1.10);
 }
 
