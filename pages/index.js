@@ -17,6 +17,14 @@ import { motion, useScroll } from "framer-motion"
 
 
 export default function Home () {
+
+  const projectCard = {
+    transition: "0.3s ease-in",
+    background: "#1c2230",
+    color: "white",
+    boxShadow: "rgba(73, 88, 184, 0.4) 0px 5px, rgba(73, 88, 184, 0.3) 0px 10px, rgba(73, 88, 184, 0.2) 0px 15px, rgba(73, 88, 184, 0.1) 0px 20px, rgba(73, 88, 184, 0.05) 0px 25px"
+  }
+
   const chipStyle = {
     background: "#516ACF",
     marginLeft: "5px",
@@ -218,6 +226,7 @@ export default function Home () {
         >
           <Card
             className="projectBox"
+            style={projectCard}
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
@@ -273,6 +282,7 @@ export default function Home () {
 
           <Card
             className="projectBox"
+            style={projectCard}
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
@@ -332,6 +342,7 @@ export default function Home () {
 
           <Card
             className="projectBox"
+            style={projectCard}
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
