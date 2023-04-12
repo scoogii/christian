@@ -132,8 +132,11 @@ h5 {
   color: transparent;
 }
 
+.socialButton {
+  transition: all 0.07s ease all;
+}
+
 .socialButton:hover {
-  transition: all 1s ease all;
   transform: scale(1.10);
 }
 
