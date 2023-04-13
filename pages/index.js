@@ -59,6 +59,7 @@ export default function Home () {
       <Fade
         direction="up"
         duration="1100"
+        triggerOnce="true"
       >
         <div
           style={{
@@ -183,6 +184,7 @@ export default function Home () {
         <Fade
           direction="up"
           duration="1100"
+          triggerOnce="true"
         >
           <h1 style={{ textAlign: "center" }}>
             About Me
@@ -210,9 +212,15 @@ export default function Home () {
       />
 
       <div>
-        <h1 style={{ textAlign: "center" }}>
-          My Projects
-        </h1>
+        <Fade
+          direction="up"
+          duration="1100"
+          triggerOnce="true"
+        >
+          <h1 style={{ textAlign: "center" }}>
+            My Projects
+          </h1>
+        </Fade>
 
         <div
           style={{
