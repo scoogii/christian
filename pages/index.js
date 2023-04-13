@@ -232,8 +232,8 @@ export default function Home () {
           }}
         >
           <Card
-            className="projectBox"
             style={projectCard}
+            className="projectBox"
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
@@ -288,8 +288,8 @@ export default function Home () {
           </Card>
 
           <Card
-            className="projectBox"
             style={projectCard}
+            className="projectBox"
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
@@ -348,8 +348,8 @@ export default function Home () {
           </Card>
 
           <Card
-            className="projectBox"
             style={projectCard}
+            className="projectBox"
             sx={{
               width: { xs: "80vw", sm: "55vw" },
               height: { xs: 600, sm: "85vh", md: 550, lg: 550 },
