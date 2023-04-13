@@ -14,6 +14,8 @@ import { Chip } from '@mui/material';
 import { Button } from '@mantine/core';
 import { Fade } from "react-awesome-reveal";
 
+import { motion } from 'framer-motion';
+
 
 export default function Home () {
 
@@ -67,14 +69,24 @@ export default function Home () {
             height: "100vh",
           }}
         >
-          <Image
-            priority
-            className="profileBox"
-            src="/images/christian.jpg"
-            height={320}
-            width={320}
-            alt=""
-          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
+            <Image
+              priority
+              className="profileBox"
+              src="/images/christian.jpg"
+              height={320}
+              width={320}
+              alt=""
+            />
+          </motion.div>
 
           <h1 style={{ fontSize: "50pt", textAlign: "center" }}>
             Hi, I&apos;m Christian
