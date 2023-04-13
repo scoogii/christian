@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import { Chip } from '@mui/material';
 import { Button } from '@mantine/core';
+import { Fade } from "react-awesome-reveal";
 
 
 export default function Home () {
@@ -53,104 +54,109 @@ export default function Home () {
         <li></li>
       </ul>
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100vh",
-        }}
+      <Fade
+        direction="up"
+        duration="1100"
       >
-        <Image
-          priority
-          className="profileBox"
-          src="/images/christian.jpg"
-          height={320}
-          width={320}
-          alt=""
-        />
-
-        <h1 style={{ fontSize: "50pt", textAlign: "center" }}>
-          Hi, I&apos;m Christian
-        </h1>
-
-        <h2
-          style={{ textAlign: "center", marginTop: "-50px" }}
-          sx={{
-            marginTop: { md: -200, lg: -200 }
-          }}
-        >
-          UNSW Computer Science
-        </h2>
-
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
+            flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
+            height: "100vh",
           }}
         >
-          <Button
-            size="md"
-            className="socialButton"
-            variant="gradient"
-            style={{
-              marginRight: "15px"
+          <Image
+            priority
+            className="profileBox"
+            src="/images/christian.jpg"
+            height={320}
+            width={320}
+            alt=""
+          />
+
+          <h1 style={{ fontSize: "50pt", textAlign: "center" }}>
+            Hi, I&apos;m Christian
+          </h1>
+
+          <h2
+            style={{ textAlign: "center", marginTop: "-50px" }}
+            sx={{
+              marginTop: { md: -200, lg: -200 }
             }}
-            component="a"
-            href="https://github.com/scoogii"
-            target="_blank"
           >
-            <GitHubIcon />
-          </Button>
+            UNSW Computer Science
+          </h2>
 
-          <Button
-            size="md"
-            className="socialButton"
-            variant="gradient"
+          <div
             style={{
-              marginLeft: "15px",
-              marginRight: "15px"
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
-            component="a"
-            href="https://linkedin.com/in/christianngu"
-            target="_blank"
           >
-            <LinkedInIcon />
-          </Button>
+            <Button
+              size="md"
+              className="socialButton"
+              variant="gradient"
+              style={{
+                marginRight: "15px"
+              }}
+              component="a"
+              href="https://github.com/scoogii"
+              target="_blank"
+            >
+              <GitHubIcon />
+            </Button>
+
+            <Button
+              size="md"
+              className="socialButton"
+              variant="gradient"
+              style={{
+                marginLeft: "15px",
+                marginRight: "15px"
+              }}
+              component="a"
+              href="https://linkedin.com/in/christianngu"
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </Button>
 
 
-          <Button
-            size="md"
-            className="socialButton"
-            variant="gradient"
-            style={{
-              marginLeft: "15px",
-              marginRight: "15px",
-            }}
-            component="a"
-            href="mailto:christian.nguyen6@outlook.com"
-          >
-            <EmailIcon />
-          </Button>
+            <Button
+              size="md"
+              className="socialButton"
+              variant="gradient"
+              style={{
+                marginLeft: "15px",
+                marginRight: "15px",
+              }}
+              component="a"
+              href="mailto:christian.nguyen6@outlook.com"
+            >
+              <EmailIcon />
+            </Button>
 
-          <Button
-            size="md"
-            className="socialButton"
-            variant="gradient"
-            style={{
-              marginLeft: "15px",
-            }}
-            component="a"
-            href="https://www.youtube.com/watch?v=xfeys7Jfnx8&ab_channel=nigahiga"
-            target="_blank"
-          >
-            <YoutubeIcon />
-          </Button>
-        </div>
+            <Button
+              size="md"
+              className="socialButton"
+              variant="gradient"
+              style={{
+                marginLeft: "15px",
+              }}
+              component="a"
+              href="https://www.youtube.com/watch?v=xfeys7Jfnx8&ab_channel=nigahiga"
+              target="_blank"
+            >
+              <YoutubeIcon />
+            </Button>
+          </div>
 
-      </div >
+        </div >
+      </Fade >
 
       <hr
         style={{
@@ -162,9 +168,14 @@ export default function Home () {
       />
 
       <div>
-        <h1 style={{ textAlign: "center" }}>
-          About Me
-        </h1>
+        <Fade
+          direction="up"
+          duration="1100"
+        >
+          <h1 style={{ textAlign: "center" }}>
+            About Me
+          </h1>
+        </Fade>
 
         <p style={{ textAlign: "center" }}>
           I&apos;m an aspiring software engineer in my final year and I love to find ways to continually
