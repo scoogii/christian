@@ -359,7 +359,7 @@ export default function Home () {
             <CardMedia
               component="img"
               height="250px"
-              image="/images/loopmania.jpeg"
+              image="/images/loopest.gif"
             />
             <CardContent>
               <Typography gutterbottom="true" variant="h5" component="div" color="white">
