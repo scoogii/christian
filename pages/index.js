@@ -192,9 +192,9 @@ export default function Home () {
         </Fade>
 
         <p style={{ textAlign: "center" }}>
-          I&apos;m an aspiring software engineer in my final year and I love to find ways to continually
+          I&apos;m an aspiring software engineer in my final year who loves to find ways to continually
           challenge myself. My dream is to work on real-world problems that
-          can have a lasting positive impact in the world. In my spare time I&apos;ve been doing a lot of powerlifting and running so maybe one day I can overhead press a car 💪😎.
+          can have a lasting positive impact in the world. In my spare time I&apos;ve been doing a lot of powerlifting so maybe one day you&apos;ll see me overhead press a car 💪😎.
         </p>
 
         <p style={{ textAlign: "center" }}>
