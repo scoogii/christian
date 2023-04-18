@@ -43,7 +43,7 @@ export default function Home () {
         <title>Christian&apos;s Portfolio</title>
       </Head>
 
-      <ul class="background">
+      <ul className="background">
         <li></li>
         <li></li>
         <li></li>
@@ -299,7 +299,7 @@ export default function Home () {
             <CardMedia
               component="img"
               height="250px"
-              image="/images/flockr.jpeg"
+              image="/images/flocks.gif"
             />
             <CardContent>
               <Typography gutterbottom="true" variant="h5" component="div" color="white">
