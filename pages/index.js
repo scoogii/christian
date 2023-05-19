@@ -199,6 +199,7 @@ export default function Home () {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Image
             priority
+            className="gloriousOllie"
             src="/images/ollitoes.jpg"
             height={100}
             width={100}
