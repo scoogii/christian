@@ -194,12 +194,17 @@ export default function Home () {
         <p style={{ textAlign: "center" }}>
           I&apos;m an aspiring software engineer in my final year who loves to find ways to continually
           challenge myself. My dream is to work on real-world problems that
-          can have a lasting positive impact in the world. In my spare time I&apos;ve been doing a lot of powerlifting so maybe one day you&apos;ll see me overhead press a car 💪😎.
+          can have a lasting positive impact in the world. In my spare time I&apos;ve started getting into long-distance running as well as playing SUPER AUTO PETS 😂
         </p>
-
-        <p style={{ textAlign: "center" }}>
-          (I have a dog too 😃)
-        </p>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <Image
+            priority
+            src="/images/ollitoes.jpg"
+            height={100}
+            width={100}
+            alt=""
+          />
+        </div>
       </div>
 
       <hr
