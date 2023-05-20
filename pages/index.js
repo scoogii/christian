@@ -9,6 +9,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import Tooltip from '@mui/material/Tooltip';
 
 import { Chip } from '@mui/material';
 import { Button } from '@mantine/core';
@@ -197,14 +198,16 @@ export default function Home () {
           can have a lasting positive impact in the world. In my spare time I&apos;ve started getting into long-distance running as well as playing SUPER AUTO PETS 😂
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Image
-            priority
-            className="gloriousOllie"
-            src="/images/ollitoes.jpg"
-            height={100}
-            width={100}
-            alt=""
-          />
+          <Tooltip title="meow">
+            <Image
+              priority
+              className="gloriousOllie"
+              src="/images/ollitoes.jpg"
+              height={100}
+              width={100}
+              alt=""
+            />
+          </Tooltip>
         </div>
       </div>
 
