@@ -195,7 +195,8 @@ export default function Home () {
         <p style={{ textAlign: "center" }}>
           I&apos;m an aspiring software engineer in my final year who loves to find ways to continually
           challenge myself. My dream is to work on real-world problems that
-          can have a lasting positive impact in the world. In my spare time I&apos;ve started getting into long-distance running as well as playing SUPER AUTO PETS 😂
+          can have a lasting positive impact in the world. I&apos;m becoming a big fan of watches so if anyone wants
+          to chat about that, feel free to contact me anytime!
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Tooltip title="meow">
