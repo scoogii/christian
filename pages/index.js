@@ -93,6 +93,11 @@ export default function Home() {
             <Button
               size="md"
               className="socialButton"
+              sx={{
+                "&:hover": {
+                  background: "#516acf",
+                },
+              }}
               style={{
                 marginRight: "15px",
               }}
@@ -106,6 +111,11 @@ export default function Home() {
             <Button
               size="md"
               className="socialButton"
+              sx={{
+                "&:hover": {
+                  background: "#516acf",
+                },
+              }}
               style={{
                 marginLeft: "15px",
                 marginRight: "15px",
@@ -120,6 +130,11 @@ export default function Home() {
             <Button
               size="md"
               className="socialButton"
+              sx={{
+                "&:hover": {
+                  background: "#516acf",
+                },
+              }}
               style={{
                 marginLeft: "15px",
                 marginRight: "15px",
